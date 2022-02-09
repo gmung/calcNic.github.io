@@ -1,0 +1,45 @@
+<html>
+  <head> 
+      <title>Calculatrice de Nic</title>
+       
+      <script src="scripts/calc_scripts.js"></script>      
+      <link rel="stylesheet" href="css/style.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  </head>
+  <body>
+      
+        <h1 class="main-title" > Calculatrice de Nic   </h1><br><br>
+
+        
+      <div>
+          
+          <label class="field-label" >Montant initial</label><br>
+          <input class="field-input" id="MontIni" type="number" min="1" step="1" max="10000000" value='' /><span class="field-input-unit"> $</span><br><br>
+      </div>
+        
+      <div>
+           <label class="field-label">Marge</label><br>
+           <input class="field-input" id="Marge" type="number" min="1" step="1" max="100" value="0" /><span class="field-input-unit"> %</span><br><br>
+      </div>
+
+      
+
+      <div class="buttons_div">
+        <button class="button1" onclick="calc();">Calculer</button>
+        <button class="button2" onClick="window.location.reload();">Tout effacer</button>
+      </div>
+
+    <div id="result_div" class="result_div">
+           <hr class="sep"> <p style=" padding-top: 11px; padding-bottom: 11px; text-align: center; font-weight: normal; font-size: 1.8em;" >Résultat</p><br>
+
+      <div>
+        <label class="field-label"> Montant final avec <br> marge et taxes</label> <br>
+        <input class="field-input" id="MontFin" type="text" readonly="true" /><span class="field-input-unit"> $</span>
+      </div>
+    </div>
+
+  </body>
+</html>
